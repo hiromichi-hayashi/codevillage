@@ -1,0 +1,61 @@
+/*about*/
+
+.about {
+    background-color: $smoke;
+}
+
+.about-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-item{
+    width: 28%;
+    padding: 40px 3.5vw 30px;
+    text-align: center;
+    background-color: white;
+    @include tab {
+        padding: 28px 12px 13px;
+        width: 48%;
+    }
+    &:nth-child(3) {
+        @include tab {
+            margin-top: 20px;
+        }
+    }
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+        margin-top: 46px;
+        @include tab {
+            margin-top: 20px;
+        }
+
+    }
+    &__title{
+        font-size: 2.2rem;
+        margin-bottom: 18px;
+        @include sp {
+            font-size: 1.5rem;
+
+        }
+    }
+    &__img {
+        width: 100%;
+        max-width: 170px;
+        margin: 0 auto;
+        @include sp {
+            width: 50%;
+            min-width: 81px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__desc {
+        margin-top: 35px;
+        text-align: left;
+    }
+}
+
