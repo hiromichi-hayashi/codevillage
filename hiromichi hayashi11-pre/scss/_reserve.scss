@@ -1,0 +1,63 @@
+/*reserve*/
+footer {
+    &::before {
+        display: block;
+        width: 100%;
+        content: "";
+        border-bottom: 2px solid #70707036;
+    }
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .footer-item {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include sp {
+            width: 100%;
+        }
+        .footer-text {
+            font-size: 3.2rem;
+            color: #7070704D;
+            letter-spacing: 3.2px;
+            @include tab {
+                font-size: 1.8rem;
+
+            }
+        }
+        .footer-icon {
+            margin-left: 26px;
+        }
+    }
+}
+
+.footer-button {
+    color: #707070;
+    font-size: 1.8rem;
+    margin-top: 65px;
+    background-color: #FFFFFF;
+    padding: 10px 40px;
+    cursor: pointer;
+    @include sp {
+        display: none;
+    }
+}
+
+.footer-button-sp {
+    display: none;
+    @include sp {
+        display: flex;
+        margin: 0 auto;
+        color: #707070;
+        font-size: 1.8rem;
+        margin-top: 65px;
+        background-color: #FFFFFF;
+        padding: 10px 40px;
+        cursor: pointer;
+    }
+}

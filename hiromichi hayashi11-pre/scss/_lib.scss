@@ -1,7 +1,7 @@
 //変数
-$sky: #06BEB6;
-$naby: #283C86;
-$smoke: #f8f8f8;
+$black: #000000;
+$gray: #707070;
+$copy-font:  "ヒラギノ明朝 Pro", W3, serif;
 
 //mixin
 
@@ -12,6 +12,7 @@ $smoke: #f8f8f8;
 }
 @mixin tab {
     @media screen and (max-width: 959px){
+       position: static;
         @content;
     }
 }
@@ -21,55 +22,50 @@ $smoke: #f8f8f8;
     }
 }
 
-/*共通*/
 
+/*共通*/
 html {
-    font-size: 62.5%; //10px
+    font-size: 62.5%;/*フォントサイズ　10px*/
 }
 
-
 body {
-    font-size: 12px;
-    line-height: 1.67; //文字のサイズに対して行の高さを指定している   
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.8rem;
-    font-style: italic;
-    margin-bottom: 60px;
-    @include sp {
-        margin-bottom: 40px;
+    color: #707070;
+    font-family: Roboto;
+    letter-spacing: 5.4px;
+    opacity: 1;
+    text-align: left;
+    margin-bottom: 11px;
+    position: relative;
+    display: inline-block;
+    &:after {
+        margin-left: 22.5px;
+        display: inline-block;
+        content: "";
+        border-top: 1px solid;
+        width: 95px;
+        margin-right: 1.7rem;
+        position: absolute;
+        top: 12.5px;
+        bottom: 11.5px;
     }
-    &--bold {
-        font-weight: bold;
-        margin-right: 0.5em;
-    }
-        &:before {
-            // 疑似要素
-            display: inline-block;
-            content: "";
-            border-top: 1px solid;
-            width: 2em;
-            margin-right: 1.7rem;
-        }
-        &:after {
-            @extend .title:before;
-            margin-right: 0;//打ち消し用
-            margin-left: 1.7rem;
-        }
 
 }
 
 .inner {
-    width: 100%-9.7%*2;//9.7%は両側の余白
-    padding: 90px 0;
+    max-width: 1500px;
+    width: 85%;
     margin: 0 auto;
+    padding: 13% 0 70px;
+    max-width: 1282px;
     @include sp {
+        padding: 13% 0;
         width: 90%;
-        padding: 50px 0;
     }
 }
-

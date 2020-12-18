@@ -1,0 +1,51 @@
+/*access*/
+
+.access {
+    background: linear-gradient(to bottom, #A193861F 0% ,#A193861F 28%,#A1938689 28%,#A1938689 87%, #A193861F 87%, #A193861F 100%);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @include sp {
+        background: linear-gradient(to bottom, #A193861F 0% ,#A193861F 28%,#A1938689 28%,#A1938689 87%, #A193861F 87%, #A193861F 100%);
+
+    }
+}
+
+.access-info {
+    display: block;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    opacity: 1;
+    @include sp {
+        width: 100%;
+    }
+    .access-shop {
+        font-family: "Roboto Mono for Powerline",bold;
+        margin-top: 10%;
+        color: #00000038;
+        font-size: 2.4rem;
+        @include sp {
+            margin-top: 85%;
+        }
+    }
+    .access-tel,.access-time,.access-text {
+        margin-top: 24px;
+    }
+    .access-offday {
+        margin-top: 24px;
+        margin-bottom: 107px;
+    }
+}
+
+.access-map {
+    position: absolute;
+    right: 0%;
+    top: 28%;
+    width: 65%;
+    height: 59%;
+    @include sp {
+        top: 14%;
+        width: 100%;
+        height: 30%;
+    }
+}

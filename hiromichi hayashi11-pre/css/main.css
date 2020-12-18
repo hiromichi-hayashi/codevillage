@@ -1,0 +1,924 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+/*共通*/
+html {
+  font-size: 62.5%;
+  /*フォントサイズ　10px*/
+}
+
+body {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #707070;
+  font-family: Roboto;
+  letter-spacing: 5.4px;
+  opacity: 1;
+  text-align: left;
+  margin-bottom: 11px;
+  position: relative;
+  display: inline-block;
+}
+
+.title:after {
+  margin-left: 22.5px;
+  display: inline-block;
+  content: "";
+  border-top: 1px solid;
+  width: 95px;
+  margin-right: 1.7rem;
+  position: absolute;
+  top: 12.5px;
+  bottom: 11.5px;
+}
+
+.inner {
+  max-width: 1500px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 13% 0 70px;
+  max-width: 1282px;
+}
+
+@media screen and (max-width: 568px) {
+  .inner {
+    padding: 13% 0;
+    width: 90%;
+  }
+}
+
+/*header*/
+header {
+  font-style: Roboto Mono for Powerline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  width: 100%;
+  padding: 8% 0 0 8%;
+  z-index: 10;
+  position: absolute;
+}
+
+@media screen and (max-width: 959px) {
+  header {
+    position: static;
+    position: static;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px;
+  }
+}
+
+.hd-title {
+  font-size: 3.8rem;
+  letter-spacing: 3.8px;
+  color: #000000;
+}
+
+@media screen and (max-width: 959px) {
+  .hd-title {
+    position: static;
+    font-size: 2.2rem;
+  }
+}
+
+.navmenu {
+  font-size: 1.8rem;
+  color: #707070;
+}
+
+@media screen and (max-width: 959px) {
+  .navmenu {
+    position: static;
+    display: none;
+  }
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 3.2;
+}
+
+@media screen and (max-width: 959px) {
+  ul {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 6;
+    margin-top: 15%;
+  }
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+ul li:hover {
+  display: block;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  content: "";
+  border-bottom: 2px solid #000000;
+  margin: 0 auto;
+  -webkit-transform: scaleX(1.5);
+          transform: scaleX(1.5);
+}
+
+#hammenu {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  #hammenu {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 25px;
+    height: 14px;
+    position: relative;
+  }
+  #hammenu span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #3B4043;
+  }
+}
+
+.navmenu.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  width: 25px;
+  height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+@media screen and (max-width: 959px) {
+  .navmenu.open {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: fixed;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 0.5;
+  }
+}
+
+/*eyecahcth*/
+.eyeCatch {
+  display: block;
+  height: 100%;
+}
+
+.eyeCatch-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.eyeCatch-wrap .first-view-catch {
+  width: 47%;
+  margin-top: 105px;
+}
+
+@media screen and (max-width: 959px) {
+  .eyeCatch-wrap .first-view-catch {
+    position: static;
+    display: none;
+  }
+}
+
+.eyeCatch-wrap .eyeCatch-copy {
+  display: inline-block;
+  padding: 0 105px 0 163px;
+  font-size: 3.8rem;
+  font-family: "ヒラギノ明朝 Pro", W3, serif;
+  margin-bottom: 48px;
+}
+
+.eyeCatch-wrap .eyeCatch-logo {
+  display: inline-block;
+  padding: 0 97px 0 107px;
+  font-size: 3.8rem;
+  font-family: Zapfino, Regular;
+}
+
+.first-img {
+  height: 800px;
+  display: block;
+  background-image: url(../img/Alondwomanwithlongcurlybeautifulhair.png);
+  background-size: cover;
+  width: 53%;
+}
+
+@media screen and (max-width: 959px) {
+  .first-img {
+    position: static;
+    display: none;
+  }
+}
+
+.eyeCatch-wrap__sp {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .eyeCatch-wrap__sp {
+    position: static;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    background-image: url(../img/Alondwomanwithlongcurlybeautifulhair.png);
+    background-size: cover;
+    height: 100vh;
+    display: inline-block;
+  }
+  .eyeCatch-wrap__sp .first-view-catch__sp {
+    color: #FFFFFF;
+    text-shadow: 0px 3px 16px #FFFFFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50%;
+  }
+  .eyeCatch-wrap__sp .eyeCatch-copy__sp {
+    font-size: 3rem;
+    font-family: "ヒラギノ明朝 Pro", W3, serif;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 959px) and (max-width: 568px) {
+  .eyeCatch-wrap__sp .eyeCatch-copy__sp {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .eyeCatch-wrap__sp .eyeCatch-logo__sp {
+    font-size: 3.8rem;
+    font-family: "Zapfino", Regular;
+  }
+}
+
+@media screen and (max-width: 959px) and (max-width: 568px) {
+  .eyeCatch-wrap__sp .eyeCatch-logo__sp {
+    font-size: 2.8rem;
+  }
+}
+
+/*menu*/
+.menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) {
+  .menu-wrap {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu__item {
+  width: 21.5%;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 959px) {
+  .menu__item {
+    position: static;
+    margin-top: 10%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .menu__item {
+    display: block;
+    width: 100%;
+  }
+}
+
+.menu__item__img1 {
+  background-image: url(../img/jens-lindner-4i7-mcM7xSY-unsplash.png);
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+}
+
+.menu__item__img2 {
+  background-image: url(../img/beautiful-beauty-female-247322.png);
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+}
+
+.menu__item__img3 {
+  background-image: url(../img/edgar-perez-kTBJmeRbAbo-unsplash.png);
+  background-size: cover;
+  width: 100%;
+  height: 270px;
+}
+
+.menu__content {
+  text-align: center;
+}
+
+@media screen and (max-width: 959px) {
+  .menu__content {
+    position: static;
+    margin-left: 3%;
+    text-align: left;
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .menu__content {
+    width: 82%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+.menu__content__title {
+  font-size: 3rem;
+  font-family: Roboto Mono for Powerline;
+  margin-top: 35px;
+  letter-spacing: 3px;
+}
+
+@media screen and (max-width: 959px) {
+  .menu__content__title {
+    position: static;
+    margin-top: 0px;
+  }
+}
+
+.menu__content__intro {
+  font-size: 1.6rem;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.menu__content__price {
+  margin-top: 35px;
+  text-align: right;
+  font-size: 1.6rem;
+}
+
+/*concept*/
+.concept-wrap {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(45%, #A193861F), color-stop(45%, #A1938689), to(#A1938689));
+  background: linear-gradient(to bottom, #A193861F 0%, #A193861F 45%, #A1938689 45%, #A1938689 100%);
+}
+
+@media screen and (max-width: 568px) {
+  .concept-wrap {
+    background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(25%, #A193861F), color-stop(25%, #A1938689), to(#A1938689));
+    background: linear-gradient(to bottom, #A193861F 0%, #A193861F 25%, #A1938689 25%, #A1938689 100%);
+  }
+}
+
+.concept-img {
+  width: 100%;
+  height: 413px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-img {
+    position: static;
+    height: 200px;
+    margin-top: 8%;
+  }
+}
+
+.concept-img .concept__img1 {
+  background-image: url(../img/andrew-neel-f480QIEvwGI-unsplash.png);
+  background-size: cover;
+  width: 67%;
+}
+
+@media screen and (max-width: 568px) {
+  .concept-img .concept__img1 {
+    width: 50%;
+    background-position: 75%, 50%;
+  }
+}
+
+.concept-img .concept__img2 {
+  background-image: url(../img/joel-mott-mNYL0surXh8-unsplash.png);
+  background-size: cover;
+  width: 32%;
+  margin-left: 11px;
+}
+
+@media screen and (max-width: 568px) {
+  .concept-img .concept__img2 {
+    width: 50%;
+  }
+}
+
+.concept-item {
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8%;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-item {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.concept-item .concept__copy {
+  font-size: 4rem;
+  font-family: "ヒラギノ明朝 Pro", W3, serif;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-item .concept__copy {
+    position: static;
+    font-size: 1.8rem;
+  }
+}
+
+.concept-item .concept__text {
+  font-size: 1.6rem;
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 39%;
+}
+
+@media screen and (max-width: 959px) {
+  .concept-item .concept__text {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/*access*/
+.access {
+  background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(28%, #A193861F), color-stop(28%, #A1938689), color-stop(87%, #A1938689), color-stop(87%, #A193861F), to(#A193861F));
+  background: linear-gradient(to bottom, #A193861F 0%, #A193861F 28%, #A1938689 28%, #A1938689 87%, #A193861F 87%, #A193861F 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+@media screen and (max-width: 568px) {
+  .access {
+    background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(28%, #A193861F), color-stop(28%, #A1938689), color-stop(87%, #A1938689), color-stop(87%, #A193861F), to(#A193861F));
+    background: linear-gradient(to bottom, #A193861F 0%, #A193861F 28%, #A1938689 28%, #A1938689 87%, #A193861F 87%, #A193861F 100%);
+  }
+}
+
+.access-info {
+  display: block;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  opacity: 1;
+}
+
+@media screen and (max-width: 568px) {
+  .access-info {
+    width: 100%;
+  }
+}
+
+.access-info .access-shop {
+  font-family: "Roboto Mono for Powerline",bold;
+  margin-top: 10%;
+  color: #00000038;
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 568px) {
+  .access-info .access-shop {
+    margin-top: 85%;
+  }
+}
+
+.access-info .access-tel, .access-info .access-time, .access-info .access-text {
+  margin-top: 24px;
+}
+
+.access-info .access-offday {
+  margin-top: 24px;
+  margin-bottom: 107px;
+}
+
+.access-map {
+  position: absolute;
+  right: 0%;
+  top: 28%;
+  width: 65%;
+  height: 59%;
+}
+
+@media screen and (max-width: 568px) {
+  .access-map {
+    top: 14%;
+    width: 100%;
+    height: 30%;
+  }
+}
+
+/*reserve*/
+footer::before {
+  display: block;
+  width: 100%;
+  content: "";
+  border-bottom: 2px solid #70707036;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.footer-wrap .footer-item {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 568px) {
+  .footer-wrap .footer-item {
+    width: 100%;
+  }
+}
+
+.footer-wrap .footer-item .footer-text {
+  font-size: 3.2rem;
+  color: #7070704D;
+  letter-spacing: 3.2px;
+}
+
+@media screen and (max-width: 959px) {
+  .footer-wrap .footer-item .footer-text {
+    position: static;
+    font-size: 1.8rem;
+  }
+}
+
+.footer-wrap .footer-item .footer-icon {
+  margin-left: 26px;
+}
+
+.footer-button {
+  color: #707070;
+  font-size: 1.8rem;
+  margin-top: 65px;
+  background-color: #FFFFFF;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 568px) {
+  .footer-button {
+    display: none;
+  }
+}
+
+.footer-button-sp {
+  display: none;
+}
+
+@media screen and (max-width: 568px) {
+  .footer-button-sp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    color: #707070;
+    font-size: 1.8rem;
+    margin-top: 65px;
+    background-color: #FFFFFF;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=main.css.map */
