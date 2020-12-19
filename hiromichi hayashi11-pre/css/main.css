@@ -329,19 +329,35 @@ ul {
 }
 
 ul li {
-  margin-left: 20px;
+  text-align: center;
 }
 
-ul li:hover {
+ul a {
+  margin-left: 20px;
+  display: inline-block;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.line {
+  margin-left: 20px;
+  display: inline-block;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.line::after {
+  width: 0;
   display: block;
-  width: 100%;
+  margin: 6px auto 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   content: "";
   border-bottom: 2px solid #000000;
-  margin: 0 auto;
-  -webkit-transform: scaleX(1.5);
-          transform: scaleX(1.5);
+}
+
+.line:hover::after {
+  width: 100%;
 }
 
 #hammenu {
@@ -401,8 +417,6 @@ ul li:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: fixed;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
     position: absolute;
     top: 70px;
     left: 0;

@@ -48,19 +48,36 @@ ul {
         margin-top: 15%;
     }
     li {
-        margin-left: 20px;
-        &:hover {
-            display: block;
-            width: 100%;
-            transition: 0.5s;
-            content: "";
-            border-bottom: 2px solid $black;
-            margin: 0 auto;
-            transform: scaleX(1.5);
-        }
+        text-align: center;
     }
-    
+    a {
+        margin-left: 20px;
+        display: inline-block;
+        padding-bottom: 4px;
+        position: relative;
+    }
 }
+.line {
+    margin-left: 20px;
+    display: inline-block;
+    padding-bottom: 4px;
+    position: relative;
+    &::after {
+        width: 0;
+        display: block;
+        margin: 6px auto 0;
+        transition: 0.5s;
+        content: "";
+        border-bottom: 2px solid $black;
+
+        // transform: scaleX(1);
+    }
+    &:hover::after{
+        width: 100%;
+    }
+
+}
+
 #hammenu {
     display: none;
     @include tab {
@@ -110,7 +127,7 @@ ul {
         display: flex;
         justify-content: space-between;
         position: fixed;
-        transform: translateX(0);
+        // transform: translateX(0);
         position: absolute;
         top: 70px;
         left: 0;
