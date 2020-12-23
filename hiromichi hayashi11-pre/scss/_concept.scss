@@ -51,7 +51,8 @@
         font-size: 4rem;
         font-family: $copy-font;
         letter-spacing: 16px;
-        margin: 0 auto;
+        margin-left:9%;
+        margin-right: 4%;
         @include tab {
             margin-top: 25px;
             letter-spacing: 7.2px;
@@ -67,7 +68,7 @@
         font-size: 1.6rem;
         display: inline-block;
         justify-content: space-between;
-        width: 39%;
+        width: 40%;
         @include tab {
             width: 100%;
             margin-top: 20px;

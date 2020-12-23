@@ -263,7 +263,7 @@ header {
   display: flex;
   text-align: left;
   width: 100%;
-  padding: 5% 0 0 8%;
+  padding: 4% 0 0 6%;
   z-index: 10;
   position: absolute;
 }
@@ -796,7 +796,8 @@ ul a {
   font-size: 4rem;
   font-family: "ヒラギノ明朝 Pro", W3, serif;
   letter-spacing: 16px;
-  margin: 0 auto;
+  margin-left: 9%;
+  margin-right: 4%;
 }
 
 @media screen and (max-width: 959px) {
@@ -820,7 +821,7 @@ ul a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 39%;
+  width: 40%;
 }
 
 @media screen and (max-width: 959px) {
