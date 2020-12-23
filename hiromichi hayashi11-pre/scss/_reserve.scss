@@ -18,7 +18,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include sp {
+        @include tab {
             width: 100%;
         }
         .footer-text {
@@ -43,14 +43,14 @@ footer {
     background-color: #FFFFFF;
     padding: 10px 40px;
     cursor: pointer;
-    @include sp {
+    @include tab {
         display: none;
     }
 }
 
 .footer-button-sp {
     display: none;
-    @include sp {
+    @include tab {
         display: flex;
         margin: 0 auto;
         color: #707070;

@@ -44,15 +44,22 @@
     margin-top: 8%;
     @include tab {
         flex-direction: column;
+        padding-bottom: 40px;
     } 
 
     .concept__copy {
         font-size: 4rem;
         font-family: $copy-font;
-        // letter-spacing: 16px;
+        letter-spacing: 16px;
         margin: 0 auto;
         @include tab {
+            margin-top: 25px;
+            letter-spacing: 7.2px;
+            font-size: 3.0rem;
+            text-align: center;
+        @include sp {
             font-size: 1.8rem;
+        }
         }
     }
 

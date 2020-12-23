@@ -8,16 +8,16 @@ $copy-font:  "ヒラギノ明朝 Pro", W3, serif;
 @mixin pc {
     @media screen and (min-width: 960px){
         @content;
+
     }
 }
 @mixin tab {
     @media screen and (max-width: 959px){
-       position: static;
         @content;
     }
 }
 @mixin sp {
-    @media screen and (max-width: 568px){
+    @media screen and (max-width: 520px){
         @content;
     }
 }
@@ -32,6 +32,15 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 1.67;
+    @include pc {
+        min-width: 1282px;
+    }
+    @include tab {
+        min-width: 768px;
+    }
+    @include sp {
+        min-width: 320px;
+    }
 }
 
 .title {
@@ -62,10 +71,9 @@ body {
     max-width: 1500px;
     width: 85%;
     margin: 0 auto;
-    padding: 13% 0 70px;
-    max-width: 1282px;
-    @include sp {
-        padding: 13% 0;
+    padding: 130px 0 65px;
+    @include tab {
+        padding: 60px 0 19px;
         width: 90%;
     }
 }
