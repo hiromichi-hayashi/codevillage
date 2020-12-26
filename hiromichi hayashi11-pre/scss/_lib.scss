@@ -63,6 +63,12 @@ body {
         position: absolute;
         top: 12.5px;
         bottom: 11.5px;
+        @include tab {
+            width: 70px;
+        }
+        @include sp {
+            width: 44px;
+        }
     }
 
 }
