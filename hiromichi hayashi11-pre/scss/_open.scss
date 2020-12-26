@@ -1,4 +1,5 @@
- #hammenu.open {
+/*ハンバーガーメニュー*/
+#hammenu.open {
      .top {
          top: 5px;
          transform: rotate(45deg) translate(5px, 10px);
@@ -10,19 +11,7 @@
         .bottm {
             display: none;
         }
-    }
-    // #hammenu.open {
-        //     .top {
-            //         transform: rotate(45beg) translate(4px,4px);
-            //     }
-            //     .middle {
-                //         display: none;
-                //     }
-                //     .bottm {
-                    //         transform: rotate(-45beg) translate(4px,4px);
-                    //     }
-                    // }
-                    
+    }               
 .navmenu.open {
     // @include tab {
     //     min-width: 768px;
@@ -44,7 +33,6 @@
         display: flex;
         justify-content: space-between;
         transform: translateX(0);
-        // position: absolute;
         top: 70px;
         left: 0;
         right: 0;
